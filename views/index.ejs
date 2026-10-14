@@ -19,30 +19,32 @@
     <div class="container">
         <div class="left-pane">
             <h1>History</h1>
-            <table class="table table-striped">
-                <thead>
-                    <tr>
-                        <th>Full Url</th>
-                        <th>Shorten Url</th>
-                        <th>Clicks</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <% shortUrls.forEach(shortUrl=> { %>
+            <div class="table-wrapper">
+                <table class="table table-striped">
+                    <thead>
                         <tr>
-                            <td><a href="<%= shortUrl.full %>">
-                                    <%= shortUrl.full %>
-                                </a></td>
-                            <td><a href="<%= shortUrl.short %>">
-                                    <%= shortUrl.short %>
-                                </a></td>
-                            <td>
-                                <%= shortUrl.clicks %>
-                            </td>
+                            <th>Full Url</th>
+                            <th>Shorten Url</th>
+                            <th>Clicks</th>
                         </tr>
-                        <% }) %>
-                </tbody>
-            </table>
+                    </thead>
+                    <tbody>
+                        <% shortUrls.forEach(shortUrl=> { %>
+                            <tr>
+                                <td><a href="<%= shortUrl.full %>">
+                                        <%= shortUrl.full %>
+                                    </a></td>
+                                <td><a href="<%= shortUrl.short %>">
+                                        <%= shortUrl.short %>
+                                    </a></td>
+                                <td>
+                                    <%= shortUrl.clicks %>
+                                </td>
+                            </tr>
+                            <% }) %>
+                    </tbody>
+                </table>
+            </div>
 
             <button type="button" id="reset-data" class="btn btn-danger">Remove All Shortened Links</button>
         </div>
