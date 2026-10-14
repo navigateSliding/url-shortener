@@ -1,7 +1,9 @@
 # NanosURL
+
 A simple and straightforward URL shortener
 
 ## Demo
+
 https://nanosurl.vercel.app/
 
 ## Additional Features
@@ -14,12 +16,14 @@ Additional features implemented beyond the original tutorial scope:
 - **Delete shortened links**: Ability to delete shortened URL from the list and the database
 
 ## Tech Stack
+
 - Node.js
 - Express
 - MongoDB
 - EJS
 
 ## Running Locally
+
 ```bash
 git clone https://github.com/ChrLos/url-shortener.git
 npm install
@@ -27,4 +31,5 @@ npm run devStart
 ```
 
 ## Resources
+
 https://www.youtube.com/watch?v=SLpUKAGnm-g
